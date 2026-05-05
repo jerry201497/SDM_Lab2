@@ -10,13 +10,25 @@ https://www.overleaf.com/3782195653zjsmrpvxkkdc#ab4d28
 ### SPARQL
 
 #### List all drugs
+PREFIX ex: <http://example.org/medical-kg/>
+
 SELECT ?drug 
 WHERE {
 ?drug a ex:drug .
 }
 
 #### List all diseases
+PREFIX ex: <http://example.org/medical-kg/>
+
 SELECT ?disease 
 WHERE {
   ?disease a ex:disease .
+}
+
+### 
+PREFIX ex: <http://example.org/medical-kg/>
+
+SELECT ?drug ?disease 
+WHERE {
+  ?drug ex:getAffectedBy ?disease .
 }
