@@ -1,0 +1,965 @@
+@prefix ex: <http://example.org/medical-kg/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ex:analgesic a rdfs:Class ;
+    rdfs:subClassOf ex:drug .
+
+ex:antiInflammatory a rdfs:Class ;
+    rdfs:subClassOf ex:drug .
+
+ex:antibiotics a rdfs:Class ;
+    rdfs:subClassOf ex:drug .
+
+ex:anticoagulant a rdfs:Class ;
+    rdfs:subClassOf ex:drug .
+
+ex:antidepressant a rdfs:Class ;
+    rdfs:subClassOf ex:drug .
+
+ex:antidiabetic a rdfs:Class ;
+    rdfs:subClassOf ex:drug .
+
+ex:antifungal a rdfs:Class ;
+    rdfs:subClassOf ex:drug .
+
+ex:antihypertensive a rdfs:Class ;
+    rdfs:subClassOf ex:drug .
+
+ex:antiviral a rdfs:Class ;
+    rdfs:subClassOf ex:drug .
+
+ex:bacterialInfection a rdfs:Class ;
+    rdfs:subClassOf ex:disease .
+
+ex:bronchodilator a rdfs:Class ;
+    rdfs:subClassOf ex:drug .
+
+ex:cardiovascularDisease a rdfs:Class ;
+    rdfs:subClassOf ex:disease .
+
+ex:disease a rdfs:Class .
+
+ex:drug a rdfs:Class .
+
+ex:fungalInfection a rdfs:Class ;
+    rdfs:subClassOf ex:disease .
+
+ex:gastrointestinalDisease a rdfs:Class ;
+    rdfs:subClassOf ex:disease .
+
+ex:inflammatoryDisease a rdfs:Class ;
+    rdfs:subClassOf ex:disease .
+
+ex:mentalHealthDisorder a rdfs:Class ;
+    rdfs:subClassOf ex:disease .
+
+ex:metabolicDisease a rdfs:Class ;
+    rdfs:subClassOf ex:disease .
+
+ex:painDisorder a rdfs:Class ;
+    rdfs:subClassOf ex:disease .
+
+ex:respiratoryDisease a rdfs:Class ;
+    rdfs:subClassOf ex:disease .
+
+ex:viralInfection a rdfs:Class ;
+    rdfs:subClassOf ex:disease .
+
+ex:ACYCLOVIR a ex:antiviral ;
+    rdfs:label "ACYCLOVIR" ;
+    ex:treats ex:HERPES .
+
+ex:AMLODIPINE a ex:antihypertensive ;
+    rdfs:label "AMLODIPINE" ;
+    ex:treats ex:HEARTFAILURE .
+
+ex:AMOXICILLIN a ex:antibiotics ;
+    rdfs:label "AMOXICILLIN" ;
+    ex:treats ex:BACTERIALINFECTION,
+        ex:PNEUMONIA .
+
+ex:ASPIRIN a ex:antiInflammatory ;
+    rdfs:label "ASPIRIN" ;
+    ex:relieves ex:BACKPAIN ;
+    ex:worsen ex:GERD .
+
+ex:AZITHROMYCIN a ex:antibiotics ;
+    rdfs:label "AZITHROMYCIN" ;
+    ex:treats ex:STREPTHROAT .
+
+ex:CIPROFLOXACIN a ex:antibiotics ;
+    rdfs:label "CIPROFLOXACIN" ;
+    ex:treats ex:BACTERIALINFECTION .
+
+ex:COVID19 a ex:viralInfection ;
+    rdfs:label "COVID19" .
+
+ex:DOXYCYCLINE a ex:antibiotics ;
+    rdfs:label "DOXYCYCLINE" ;
+    ex:treats ex:TUBERCULOSIS .
+
+ex:DRUGINSTANCE1 a ex:antiInflammatory ;
+    rdfs:label "DRUG INSTANCE 1" ;
+    ex:relieves ex:DISEASEINSTANCE1 .
+
+ex:DRUGINSTANCE10 a ex:antibiotics ;
+    rdfs:label "DRUG INSTANCE 10" ;
+    ex:relieves ex:DISEASEINSTANCE10 .
+
+ex:DRUGINSTANCE100 a ex:antibiotics ;
+    rdfs:label "DRUG INSTANCE 100" ;
+    ex:relieves ex:DISEASEINSTANCE100 .
+
+ex:DRUGINSTANCE11 a ex:antiInflammatory ;
+    rdfs:label "DRUG INSTANCE 11" ;
+    ex:worsen ex:DISEASEINSTANCE11 .
+
+ex:DRUGINSTANCE12 a ex:antiviral ;
+    rdfs:label "DRUG INSTANCE 12" ;
+    ex:treats ex:DISEASEINSTANCE12 .
+
+ex:DRUGINSTANCE13 a ex:antifungal ;
+    rdfs:label "DRUG INSTANCE 13" ;
+    ex:relieves ex:DISEASEINSTANCE13 .
+
+ex:DRUGINSTANCE14 a ex:analgesic ;
+    rdfs:label "DRUG INSTANCE 14" ;
+    ex:worsen ex:DISEASEINSTANCE14 .
+
+ex:DRUGINSTANCE15 a ex:antihypertensive ;
+    rdfs:label "DRUG INSTANCE 15" ;
+    ex:treats ex:DISEASEINSTANCE15 .
+
+ex:DRUGINSTANCE16 a ex:antidiabetic ;
+    rdfs:label "DRUG INSTANCE 16" ;
+    ex:relieves ex:DISEASEINSTANCE16 .
+
+ex:DRUGINSTANCE17 a ex:anticoagulant ;
+    rdfs:label "DRUG INSTANCE 17" ;
+    ex:worsen ex:DISEASEINSTANCE17 .
+
+ex:DRUGINSTANCE18 a ex:antidepressant ;
+    rdfs:label "DRUG INSTANCE 18" ;
+    ex:treats ex:DISEASEINSTANCE18 .
+
+ex:DRUGINSTANCE19 a ex:bronchodilator ;
+    rdfs:label "DRUG INSTANCE 19" ;
+    ex:relieves ex:DISEASEINSTANCE19 .
+
+ex:DRUGINSTANCE2 a ex:antiviral ;
+    rdfs:label "DRUG INSTANCE 2" ;
+    ex:worsen ex:DISEASEINSTANCE2 .
+
+ex:DRUGINSTANCE20 a ex:antibiotics ;
+    rdfs:label "DRUG INSTANCE 20" ;
+    ex:worsen ex:DISEASEINSTANCE20 .
+
+ex:DRUGINSTANCE21 a ex:antiInflammatory ;
+    rdfs:label "DRUG INSTANCE 21" ;
+    ex:treats ex:DISEASEINSTANCE21 .
+
+ex:DRUGINSTANCE22 a ex:antiviral ;
+    rdfs:label "DRUG INSTANCE 22" ;
+    ex:relieves ex:DISEASEINSTANCE22 .
+
+ex:DRUGINSTANCE23 a ex:antifungal ;
+    rdfs:label "DRUG INSTANCE 23" ;
+    ex:worsen ex:DISEASEINSTANCE23 .
+
+ex:DRUGINSTANCE24 a ex:analgesic ;
+    rdfs:label "DRUG INSTANCE 24" ;
+    ex:treats ex:DISEASEINSTANCE24 .
+
+ex:DRUGINSTANCE25 a ex:antihypertensive ;
+    rdfs:label "DRUG INSTANCE 25" ;
+    ex:relieves ex:DISEASEINSTANCE25 .
+
+ex:DRUGINSTANCE26 a ex:antidiabetic ;
+    rdfs:label "DRUG INSTANCE 26" ;
+    ex:worsen ex:DISEASEINSTANCE26 .
+
+ex:DRUGINSTANCE27 a ex:anticoagulant ;
+    rdfs:label "DRUG INSTANCE 27" ;
+    ex:treats ex:DISEASEINSTANCE27 .
+
+ex:DRUGINSTANCE28 a ex:antidepressant ;
+    rdfs:label "DRUG INSTANCE 28" ;
+    ex:relieves ex:DISEASEINSTANCE28 .
+
+ex:DRUGINSTANCE29 a ex:bronchodilator ;
+    rdfs:label "DRUG INSTANCE 29" ;
+    ex:worsen ex:DISEASEINSTANCE29 .
+
+ex:DRUGINSTANCE3 a ex:antifungal ;
+    rdfs:label "DRUG INSTANCE 3" ;
+    ex:treats ex:DISEASEINSTANCE3 .
+
+ex:DRUGINSTANCE30 a ex:antibiotics ;
+    rdfs:label "DRUG INSTANCE 30" ;
+    ex:treats ex:DISEASEINSTANCE30 .
+
+ex:DRUGINSTANCE31 a ex:antiInflammatory ;
+    rdfs:label "DRUG INSTANCE 31" ;
+    ex:relieves ex:DISEASEINSTANCE31 .
+
+ex:DRUGINSTANCE32 a ex:antiviral ;
+    rdfs:label "DRUG INSTANCE 32" ;
+    ex:worsen ex:DISEASEINSTANCE32 .
+
+ex:DRUGINSTANCE33 a ex:antifungal ;
+    rdfs:label "DRUG INSTANCE 33" ;
+    ex:treats ex:DISEASEINSTANCE33 .
+
+ex:DRUGINSTANCE34 a ex:analgesic ;
+    rdfs:label "DRUG INSTANCE 34" ;
+    ex:relieves ex:DISEASEINSTANCE34 .
+
+ex:DRUGINSTANCE35 a ex:antihypertensive ;
+    rdfs:label "DRUG INSTANCE 35" ;
+    ex:worsen ex:DISEASEINSTANCE35 .
+
+ex:DRUGINSTANCE36 a ex:antidiabetic ;
+    rdfs:label "DRUG INSTANCE 36" ;
+    ex:treats ex:DISEASEINSTANCE36 .
+
+ex:DRUGINSTANCE37 a ex:anticoagulant ;
+    rdfs:label "DRUG INSTANCE 37" ;
+    ex:relieves ex:DISEASEINSTANCE37 .
+
+ex:DRUGINSTANCE38 a ex:antidepressant ;
+    rdfs:label "DRUG INSTANCE 38" ;
+    ex:worsen ex:DISEASEINSTANCE38 .
+
+ex:DRUGINSTANCE39 a ex:bronchodilator ;
+    rdfs:label "DRUG INSTANCE 39" ;
+    ex:treats ex:DISEASEINSTANCE39 .
+
+ex:DRUGINSTANCE4 a ex:analgesic ;
+    rdfs:label "DRUG INSTANCE 4" ;
+    ex:relieves ex:DISEASEINSTANCE4 .
+
+ex:DRUGINSTANCE40 a ex:antibiotics ;
+    rdfs:label "DRUG INSTANCE 40" ;
+    ex:relieves ex:DISEASEINSTANCE40 .
+
+ex:DRUGINSTANCE41 a ex:antiInflammatory ;
+    rdfs:label "DRUG INSTANCE 41" ;
+    ex:worsen ex:DISEASEINSTANCE41 .
+
+ex:DRUGINSTANCE42 a ex:antiviral ;
+    rdfs:label "DRUG INSTANCE 42" ;
+    ex:treats ex:DISEASEINSTANCE42 .
+
+ex:DRUGINSTANCE43 a ex:antifungal ;
+    rdfs:label "DRUG INSTANCE 43" ;
+    ex:relieves ex:DISEASEINSTANCE43 .
+
+ex:DRUGINSTANCE44 a ex:analgesic ;
+    rdfs:label "DRUG INSTANCE 44" ;
+    ex:worsen ex:DISEASEINSTANCE44 .
+
+ex:DRUGINSTANCE45 a ex:antihypertensive ;
+    rdfs:label "DRUG INSTANCE 45" ;
+    ex:treats ex:DISEASEINSTANCE45 .
+
+ex:DRUGINSTANCE46 a ex:antidiabetic ;
+    rdfs:label "DRUG INSTANCE 46" ;
+    ex:relieves ex:DISEASEINSTANCE46 .
+
+ex:DRUGINSTANCE47 a ex:anticoagulant ;
+    rdfs:label "DRUG INSTANCE 47" ;
+    ex:worsen ex:DISEASEINSTANCE47 .
+
+ex:DRUGINSTANCE48 a ex:antidepressant ;
+    rdfs:label "DRUG INSTANCE 48" ;
+    ex:treats ex:DISEASEINSTANCE48 .
+
+ex:DRUGINSTANCE49 a ex:bronchodilator ;
+    rdfs:label "DRUG INSTANCE 49" ;
+    ex:relieves ex:DISEASEINSTANCE49 .
+
+ex:DRUGINSTANCE5 a ex:antihypertensive ;
+    rdfs:label "DRUG INSTANCE 5" ;
+    ex:worsen ex:DISEASEINSTANCE5 .
+
+ex:DRUGINSTANCE50 a ex:antibiotics ;
+    rdfs:label "DRUG INSTANCE 50" ;
+    ex:worsen ex:DISEASEINSTANCE50 .
+
+ex:DRUGINSTANCE51 a ex:antiInflammatory ;
+    rdfs:label "DRUG INSTANCE 51" ;
+    ex:treats ex:DISEASEINSTANCE51 .
+
+ex:DRUGINSTANCE52 a ex:antiviral ;
+    rdfs:label "DRUG INSTANCE 52" ;
+    ex:relieves ex:DISEASEINSTANCE52 .
+
+ex:DRUGINSTANCE53 a ex:antifungal ;
+    rdfs:label "DRUG INSTANCE 53" ;
+    ex:worsen ex:DISEASEINSTANCE53 .
+
+ex:DRUGINSTANCE54 a ex:analgesic ;
+    rdfs:label "DRUG INSTANCE 54" ;
+    ex:treats ex:DISEASEINSTANCE54 .
+
+ex:DRUGINSTANCE55 a ex:antihypertensive ;
+    rdfs:label "DRUG INSTANCE 55" ;
+    ex:relieves ex:DISEASEINSTANCE55 .
+
+ex:DRUGINSTANCE56 a ex:antidiabetic ;
+    rdfs:label "DRUG INSTANCE 56" ;
+    ex:worsen ex:DISEASEINSTANCE56 .
+
+ex:DRUGINSTANCE57 a ex:anticoagulant ;
+    rdfs:label "DRUG INSTANCE 57" ;
+    ex:treats ex:DISEASEINSTANCE57 .
+
+ex:DRUGINSTANCE58 a ex:antidepressant ;
+    rdfs:label "DRUG INSTANCE 58" ;
+    ex:relieves ex:DISEASEINSTANCE58 .
+
+ex:DRUGINSTANCE59 a ex:bronchodilator ;
+    rdfs:label "DRUG INSTANCE 59" ;
+    ex:worsen ex:DISEASEINSTANCE59 .
+
+ex:DRUGINSTANCE6 a ex:antidiabetic ;
+    rdfs:label "DRUG INSTANCE 6" ;
+    ex:treats ex:DISEASEINSTANCE6 .
+
+ex:DRUGINSTANCE60 a ex:antibiotics ;
+    rdfs:label "DRUG INSTANCE 60" ;
+    ex:treats ex:DISEASEINSTANCE60 .
+
+ex:DRUGINSTANCE61 a ex:antiInflammatory ;
+    rdfs:label "DRUG INSTANCE 61" ;
+    ex:relieves ex:DISEASEINSTANCE61 .
+
+ex:DRUGINSTANCE62 a ex:antiviral ;
+    rdfs:label "DRUG INSTANCE 62" ;
+    ex:worsen ex:DISEASEINSTANCE62 .
+
+ex:DRUGINSTANCE63 a ex:antifungal ;
+    rdfs:label "DRUG INSTANCE 63" ;
+    ex:treats ex:DISEASEINSTANCE63 .
+
+ex:DRUGINSTANCE64 a ex:analgesic ;
+    rdfs:label "DRUG INSTANCE 64" ;
+    ex:relieves ex:DISEASEINSTANCE64 .
+
+ex:DRUGINSTANCE65 a ex:antihypertensive ;
+    rdfs:label "DRUG INSTANCE 65" ;
+    ex:worsen ex:DISEASEINSTANCE65 .
+
+ex:DRUGINSTANCE66 a ex:antidiabetic ;
+    rdfs:label "DRUG INSTANCE 66" ;
+    ex:treats ex:DISEASEINSTANCE66 .
+
+ex:DRUGINSTANCE67 a ex:anticoagulant ;
+    rdfs:label "DRUG INSTANCE 67" ;
+    ex:relieves ex:DISEASEINSTANCE67 .
+
+ex:DRUGINSTANCE68 a ex:antidepressant ;
+    rdfs:label "DRUG INSTANCE 68" ;
+    ex:worsen ex:DISEASEINSTANCE68 .
+
+ex:DRUGINSTANCE69 a ex:bronchodilator ;
+    rdfs:label "DRUG INSTANCE 69" ;
+    ex:treats ex:DISEASEINSTANCE69 .
+
+ex:DRUGINSTANCE7 a ex:anticoagulant ;
+    rdfs:label "DRUG INSTANCE 7" ;
+    ex:relieves ex:DISEASEINSTANCE7 .
+
+ex:DRUGINSTANCE70 a ex:antibiotics ;
+    rdfs:label "DRUG INSTANCE 70" ;
+    ex:relieves ex:DISEASEINSTANCE70 .
+
+ex:DRUGINSTANCE71 a ex:antiInflammatory ;
+    rdfs:label "DRUG INSTANCE 71" ;
+    ex:worsen ex:DISEASEINSTANCE71 .
+
+ex:DRUGINSTANCE72 a ex:antiviral ;
+    rdfs:label "DRUG INSTANCE 72" ;
+    ex:treats ex:DISEASEINSTANCE72 .
+
+ex:DRUGINSTANCE73 a ex:antifungal ;
+    rdfs:label "DRUG INSTANCE 73" ;
+    ex:relieves ex:DISEASEINSTANCE73 .
+
+ex:DRUGINSTANCE74 a ex:analgesic ;
+    rdfs:label "DRUG INSTANCE 74" ;
+    ex:worsen ex:DISEASEINSTANCE74 .
+
+ex:DRUGINSTANCE75 a ex:antihypertensive ;
+    rdfs:label "DRUG INSTANCE 75" ;
+    ex:treats ex:DISEASEINSTANCE75 .
+
+ex:DRUGINSTANCE76 a ex:antidiabetic ;
+    rdfs:label "DRUG INSTANCE 76" ;
+    ex:relieves ex:DISEASEINSTANCE76 .
+
+ex:DRUGINSTANCE77 a ex:anticoagulant ;
+    rdfs:label "DRUG INSTANCE 77" ;
+    ex:worsen ex:DISEASEINSTANCE77 .
+
+ex:DRUGINSTANCE78 a ex:antidepressant ;
+    rdfs:label "DRUG INSTANCE 78" ;
+    ex:treats ex:DISEASEINSTANCE78 .
+
+ex:DRUGINSTANCE79 a ex:bronchodilator ;
+    rdfs:label "DRUG INSTANCE 79" ;
+    ex:relieves ex:DISEASEINSTANCE79 .
+
+ex:DRUGINSTANCE8 a ex:antidepressant ;
+    rdfs:label "DRUG INSTANCE 8" ;
+    ex:worsen ex:DISEASEINSTANCE8 .
+
+ex:DRUGINSTANCE80 a ex:antibiotics ;
+    rdfs:label "DRUG INSTANCE 80" ;
+    ex:worsen ex:DISEASEINSTANCE80 .
+
+ex:DRUGINSTANCE81 a ex:antiInflammatory ;
+    rdfs:label "DRUG INSTANCE 81" ;
+    ex:treats ex:DISEASEINSTANCE81 .
+
+ex:DRUGINSTANCE82 a ex:antiviral ;
+    rdfs:label "DRUG INSTANCE 82" ;
+    ex:relieves ex:DISEASEINSTANCE82 .
+
+ex:DRUGINSTANCE83 a ex:antifungal ;
+    rdfs:label "DRUG INSTANCE 83" ;
+    ex:worsen ex:DISEASEINSTANCE83 .
+
+ex:DRUGINSTANCE84 a ex:analgesic ;
+    rdfs:label "DRUG INSTANCE 84" ;
+    ex:treats ex:DISEASEINSTANCE84 .
+
+ex:DRUGINSTANCE85 a ex:antihypertensive ;
+    rdfs:label "DRUG INSTANCE 85" ;
+    ex:relieves ex:DISEASEINSTANCE85 .
+
+ex:DRUGINSTANCE86 a ex:antidiabetic ;
+    rdfs:label "DRUG INSTANCE 86" ;
+    ex:worsen ex:DISEASEINSTANCE86 .
+
+ex:DRUGINSTANCE87 a ex:anticoagulant ;
+    rdfs:label "DRUG INSTANCE 87" ;
+    ex:treats ex:DISEASEINSTANCE87 .
+
+ex:DRUGINSTANCE88 a ex:antidepressant ;
+    rdfs:label "DRUG INSTANCE 88" ;
+    ex:relieves ex:DISEASEINSTANCE88 .
+
+ex:DRUGINSTANCE89 a ex:bronchodilator ;
+    rdfs:label "DRUG INSTANCE 89" ;
+    ex:worsen ex:DISEASEINSTANCE89 .
+
+ex:DRUGINSTANCE9 a ex:bronchodilator ;
+    rdfs:label "DRUG INSTANCE 9" ;
+    ex:treats ex:DISEASEINSTANCE9 .
+
+ex:DRUGINSTANCE90 a ex:antibiotics ;
+    rdfs:label "DRUG INSTANCE 90" ;
+    ex:treats ex:DISEASEINSTANCE90 .
+
+ex:DRUGINSTANCE91 a ex:antiInflammatory ;
+    rdfs:label "DRUG INSTANCE 91" ;
+    ex:relieves ex:DISEASEINSTANCE91 .
+
+ex:DRUGINSTANCE92 a ex:antiviral ;
+    rdfs:label "DRUG INSTANCE 92" ;
+    ex:worsen ex:DISEASEINSTANCE92 .
+
+ex:DRUGINSTANCE93 a ex:antifungal ;
+    rdfs:label "DRUG INSTANCE 93" ;
+    ex:treats ex:DISEASEINSTANCE93 .
+
+ex:DRUGINSTANCE94 a ex:analgesic ;
+    rdfs:label "DRUG INSTANCE 94" ;
+    ex:relieves ex:DISEASEINSTANCE94 .
+
+ex:DRUGINSTANCE95 a ex:antihypertensive ;
+    rdfs:label "DRUG INSTANCE 95" ;
+    ex:worsen ex:DISEASEINSTANCE95 .
+
+ex:DRUGINSTANCE96 a ex:antidiabetic ;
+    rdfs:label "DRUG INSTANCE 96" ;
+    ex:treats ex:DISEASEINSTANCE96 .
+
+ex:DRUGINSTANCE97 a ex:anticoagulant ;
+    rdfs:label "DRUG INSTANCE 97" ;
+    ex:relieves ex:DISEASEINSTANCE97 .
+
+ex:DRUGINSTANCE98 a ex:antidepressant ;
+    rdfs:label "DRUG INSTANCE 98" ;
+    ex:worsen ex:DISEASEINSTANCE98 .
+
+ex:DRUGINSTANCE99 a ex:bronchodilator ;
+    rdfs:label "DRUG INSTANCE 99" ;
+    ex:treats ex:DISEASEINSTANCE99 .
+
+ex:FLUCONAZOLE a ex:antifungal ;
+    rdfs:label "FLUCONAZOLE" ;
+    ex:treats ex:CANDIDIASIS .
+
+ex:FLUOXETINE a ex:antidepressant ;
+    rdfs:label "FLUOXETINE" ;
+    ex:treats ex:ANXIETY .
+
+ex:FORMOTEROL a ex:bronchodilator ;
+    rdfs:label "FORMOTEROL" ;
+    ex:relieves ex:COPD .
+
+ex:HEPARIN a ex:anticoagulant ;
+    rdfs:label "HEPARIN" .
+
+ex:IBUPROFEN a ex:antiInflammatory ;
+    rdfs:label "IBUPROFEN" ;
+    ex:relieves ex:ARTHRITIS ;
+    ex:worsen ex:GASTRICULCER .
+
+ex:INSULIN a ex:antidiabetic ;
+    rdfs:label "INSULIN" ;
+    ex:treats ex:TYPE1DIABETES .
+
+ex:LISINOPRIL a ex:antihypertensive ;
+    rdfs:label "LISINOPRIL" ;
+    ex:treats ex:HYPERTENSION .
+
+ex:LUPUS a ex:inflammatoryDisease ;
+    rdfs:label "LUPUS" .
+
+ex:METFORMIN a ex:antidiabetic ;
+    rdfs:label "METFORMIN" ;
+    ex:treats ex:TYPE2DIABETES .
+
+ex:MORPHINE a ex:analgesic ;
+    rdfs:label "MORPHINE" ;
+    ex:relieves ex:BACKPAIN .
+
+ex:NAPROXEN a ex:antiInflammatory ;
+    rdfs:label "NAPROXEN" ;
+    ex:relieves ex:ARTHRITIS ;
+    ex:worsen ex:GASTRICULCER .
+
+ex:OSELTAMIVIR a ex:antiviral ;
+    rdfs:label "OSELTAMIVIR" ;
+    ex:treats ex:INFLUENZA .
+
+ex:PARACETAMOL a ex:analgesic ;
+    rdfs:label "PARACETAMOL" ;
+    ex:relieves ex:MIGRAINE .
+
+ex:PREDNISONE a ex:antiInflammatory ;
+    rdfs:label "PREDNISONE" ;
+    ex:relieves ex:CROHNSDISEASE .
+
+ex:PSORIASIS a ex:inflammatoryDisease ;
+    rdfs:label "PSORIASIS" .
+
+ex:SALBUTAMOL a ex:bronchodilator ;
+    rdfs:label "SALBUTAMOL" ;
+    ex:relieves ex:ASTHMA .
+
+ex:SERTRALINE a ex:antidepressant ;
+    rdfs:label "SERTRALINE" ;
+    ex:treats ex:DEPRESSION .
+
+ex:TERBINAFINE a ex:antifungal ;
+    rdfs:label "TERBINAFINE" ;
+    ex:treats ex:ATHLETESFOOT .
+
+ex:WARFARIN a ex:anticoagulant ;
+    rdfs:label "WARFARIN" .
+
+ex:relieves a rdf:Property ;
+    rdfs:domain ex:drug ;
+    rdfs:range ex:disease ;
+    rdfs:subPropertyOf ex:effect .
+
+ex:treats a rdf:Property ;
+    rdfs:domain ex:drug ;
+    rdfs:range ex:disease ;
+    rdfs:subPropertyOf ex:effect .
+
+ex:worsen a rdf:Property ;
+    rdfs:domain ex:drug ;
+    rdfs:range ex:disease ;
+    rdfs:subPropertyOf ex:effect .
+
+ex:ANXIETY a ex:mentalHealthDisorder ;
+    rdfs:label "ANXIETY" .
+
+ex:ASTHMA a ex:respiratoryDisease ;
+    rdfs:label "ASTHMA" .
+
+ex:ATHLETESFOOT a ex:fungalInfection ;
+    rdfs:label "ATHLETESFOOT" .
+
+ex:CANDIDIASIS a ex:fungalInfection ;
+    rdfs:label "CANDIDIASIS" .
+
+ex:COPD a ex:respiratoryDisease ;
+    rdfs:label "COPD" .
+
+ex:CROHNSDISEASE a ex:inflammatoryDisease ;
+    rdfs:label "CROHNSDISEASE" .
+
+ex:DEPRESSION a ex:mentalHealthDisorder ;
+    rdfs:label "DEPRESSION" .
+
+ex:DISEASEINSTANCE1 a ex:inflammatoryDisease ;
+    rdfs:label "DISEASE INSTANCE 1" .
+
+ex:DISEASEINSTANCE10 a ex:bacterialInfection ;
+    rdfs:label "DISEASE INSTANCE 10" .
+
+ex:DISEASEINSTANCE100 a ex:bacterialInfection ;
+    rdfs:label "DISEASE INSTANCE 100" .
+
+ex:DISEASEINSTANCE11 a ex:inflammatoryDisease ;
+    rdfs:label "DISEASE INSTANCE 11" .
+
+ex:DISEASEINSTANCE12 a ex:viralInfection ;
+    rdfs:label "DISEASE INSTANCE 12" .
+
+ex:DISEASEINSTANCE13 a ex:fungalInfection ;
+    rdfs:label "DISEASE INSTANCE 13" .
+
+ex:DISEASEINSTANCE14 a ex:painDisorder ;
+    rdfs:label "DISEASE INSTANCE 14" .
+
+ex:DISEASEINSTANCE15 a ex:cardiovascularDisease ;
+    rdfs:label "DISEASE INSTANCE 15" .
+
+ex:DISEASEINSTANCE16 a ex:metabolicDisease ;
+    rdfs:label "DISEASE INSTANCE 16" .
+
+ex:DISEASEINSTANCE17 a ex:respiratoryDisease ;
+    rdfs:label "DISEASE INSTANCE 17" .
+
+ex:DISEASEINSTANCE18 a ex:mentalHealthDisorder ;
+    rdfs:label "DISEASE INSTANCE 18" .
+
+ex:DISEASEINSTANCE19 a ex:gastrointestinalDisease ;
+    rdfs:label "DISEASE INSTANCE 19" .
+
+ex:DISEASEINSTANCE2 a ex:viralInfection ;
+    rdfs:label "DISEASE INSTANCE 2" .
+
+ex:DISEASEINSTANCE20 a ex:bacterialInfection ;
+    rdfs:label "DISEASE INSTANCE 20" .
+
+ex:DISEASEINSTANCE21 a ex:inflammatoryDisease ;
+    rdfs:label "DISEASE INSTANCE 21" .
+
+ex:DISEASEINSTANCE22 a ex:viralInfection ;
+    rdfs:label "DISEASE INSTANCE 22" .
+
+ex:DISEASEINSTANCE23 a ex:fungalInfection ;
+    rdfs:label "DISEASE INSTANCE 23" .
+
+ex:DISEASEINSTANCE24 a ex:painDisorder ;
+    rdfs:label "DISEASE INSTANCE 24" .
+
+ex:DISEASEINSTANCE25 a ex:cardiovascularDisease ;
+    rdfs:label "DISEASE INSTANCE 25" .
+
+ex:DISEASEINSTANCE26 a ex:metabolicDisease ;
+    rdfs:label "DISEASE INSTANCE 26" .
+
+ex:DISEASEINSTANCE27 a ex:respiratoryDisease ;
+    rdfs:label "DISEASE INSTANCE 27" .
+
+ex:DISEASEINSTANCE28 a ex:mentalHealthDisorder ;
+    rdfs:label "DISEASE INSTANCE 28" .
+
+ex:DISEASEINSTANCE29 a ex:gastrointestinalDisease ;
+    rdfs:label "DISEASE INSTANCE 29" .
+
+ex:DISEASEINSTANCE3 a ex:fungalInfection ;
+    rdfs:label "DISEASE INSTANCE 3" .
+
+ex:DISEASEINSTANCE30 a ex:bacterialInfection ;
+    rdfs:label "DISEASE INSTANCE 30" .
+
+ex:DISEASEINSTANCE31 a ex:inflammatoryDisease ;
+    rdfs:label "DISEASE INSTANCE 31" .
+
+ex:DISEASEINSTANCE32 a ex:viralInfection ;
+    rdfs:label "DISEASE INSTANCE 32" .
+
+ex:DISEASEINSTANCE33 a ex:fungalInfection ;
+    rdfs:label "DISEASE INSTANCE 33" .
+
+ex:DISEASEINSTANCE34 a ex:painDisorder ;
+    rdfs:label "DISEASE INSTANCE 34" .
+
+ex:DISEASEINSTANCE35 a ex:cardiovascularDisease ;
+    rdfs:label "DISEASE INSTANCE 35" .
+
+ex:DISEASEINSTANCE36 a ex:metabolicDisease ;
+    rdfs:label "DISEASE INSTANCE 36" .
+
+ex:DISEASEINSTANCE37 a ex:respiratoryDisease ;
+    rdfs:label "DISEASE INSTANCE 37" .
+
+ex:DISEASEINSTANCE38 a ex:mentalHealthDisorder ;
+    rdfs:label "DISEASE INSTANCE 38" .
+
+ex:DISEASEINSTANCE39 a ex:gastrointestinalDisease ;
+    rdfs:label "DISEASE INSTANCE 39" .
+
+ex:DISEASEINSTANCE4 a ex:painDisorder ;
+    rdfs:label "DISEASE INSTANCE 4" .
+
+ex:DISEASEINSTANCE40 a ex:bacterialInfection ;
+    rdfs:label "DISEASE INSTANCE 40" .
+
+ex:DISEASEINSTANCE41 a ex:inflammatoryDisease ;
+    rdfs:label "DISEASE INSTANCE 41" .
+
+ex:DISEASEINSTANCE42 a ex:viralInfection ;
+    rdfs:label "DISEASE INSTANCE 42" .
+
+ex:DISEASEINSTANCE43 a ex:fungalInfection ;
+    rdfs:label "DISEASE INSTANCE 43" .
+
+ex:DISEASEINSTANCE44 a ex:painDisorder ;
+    rdfs:label "DISEASE INSTANCE 44" .
+
+ex:DISEASEINSTANCE45 a ex:cardiovascularDisease ;
+    rdfs:label "DISEASE INSTANCE 45" .
+
+ex:DISEASEINSTANCE46 a ex:metabolicDisease ;
+    rdfs:label "DISEASE INSTANCE 46" .
+
+ex:DISEASEINSTANCE47 a ex:respiratoryDisease ;
+    rdfs:label "DISEASE INSTANCE 47" .
+
+ex:DISEASEINSTANCE48 a ex:mentalHealthDisorder ;
+    rdfs:label "DISEASE INSTANCE 48" .
+
+ex:DISEASEINSTANCE49 a ex:gastrointestinalDisease ;
+    rdfs:label "DISEASE INSTANCE 49" .
+
+ex:DISEASEINSTANCE5 a ex:cardiovascularDisease ;
+    rdfs:label "DISEASE INSTANCE 5" .
+
+ex:DISEASEINSTANCE50 a ex:bacterialInfection ;
+    rdfs:label "DISEASE INSTANCE 50" .
+
+ex:DISEASEINSTANCE51 a ex:inflammatoryDisease ;
+    rdfs:label "DISEASE INSTANCE 51" .
+
+ex:DISEASEINSTANCE52 a ex:viralInfection ;
+    rdfs:label "DISEASE INSTANCE 52" .
+
+ex:DISEASEINSTANCE53 a ex:fungalInfection ;
+    rdfs:label "DISEASE INSTANCE 53" .
+
+ex:DISEASEINSTANCE54 a ex:painDisorder ;
+    rdfs:label "DISEASE INSTANCE 54" .
+
+ex:DISEASEINSTANCE55 a ex:cardiovascularDisease ;
+    rdfs:label "DISEASE INSTANCE 55" .
+
+ex:DISEASEINSTANCE56 a ex:metabolicDisease ;
+    rdfs:label "DISEASE INSTANCE 56" .
+
+ex:DISEASEINSTANCE57 a ex:respiratoryDisease ;
+    rdfs:label "DISEASE INSTANCE 57" .
+
+ex:DISEASEINSTANCE58 a ex:mentalHealthDisorder ;
+    rdfs:label "DISEASE INSTANCE 58" .
+
+ex:DISEASEINSTANCE59 a ex:gastrointestinalDisease ;
+    rdfs:label "DISEASE INSTANCE 59" .
+
+ex:DISEASEINSTANCE6 a ex:metabolicDisease ;
+    rdfs:label "DISEASE INSTANCE 6" .
+
+ex:DISEASEINSTANCE60 a ex:bacterialInfection ;
+    rdfs:label "DISEASE INSTANCE 60" .
+
+ex:DISEASEINSTANCE61 a ex:inflammatoryDisease ;
+    rdfs:label "DISEASE INSTANCE 61" .
+
+ex:DISEASEINSTANCE62 a ex:viralInfection ;
+    rdfs:label "DISEASE INSTANCE 62" .
+
+ex:DISEASEINSTANCE63 a ex:fungalInfection ;
+    rdfs:label "DISEASE INSTANCE 63" .
+
+ex:DISEASEINSTANCE64 a ex:painDisorder ;
+    rdfs:label "DISEASE INSTANCE 64" .
+
+ex:DISEASEINSTANCE65 a ex:cardiovascularDisease ;
+    rdfs:label "DISEASE INSTANCE 65" .
+
+ex:DISEASEINSTANCE66 a ex:metabolicDisease ;
+    rdfs:label "DISEASE INSTANCE 66" .
+
+ex:DISEASEINSTANCE67 a ex:respiratoryDisease ;
+    rdfs:label "DISEASE INSTANCE 67" .
+
+ex:DISEASEINSTANCE68 a ex:mentalHealthDisorder ;
+    rdfs:label "DISEASE INSTANCE 68" .
+
+ex:DISEASEINSTANCE69 a ex:gastrointestinalDisease ;
+    rdfs:label "DISEASE INSTANCE 69" .
+
+ex:DISEASEINSTANCE7 a ex:respiratoryDisease ;
+    rdfs:label "DISEASE INSTANCE 7" .
+
+ex:DISEASEINSTANCE70 a ex:bacterialInfection ;
+    rdfs:label "DISEASE INSTANCE 70" .
+
+ex:DISEASEINSTANCE71 a ex:inflammatoryDisease ;
+    rdfs:label "DISEASE INSTANCE 71" .
+
+ex:DISEASEINSTANCE72 a ex:viralInfection ;
+    rdfs:label "DISEASE INSTANCE 72" .
+
+ex:DISEASEINSTANCE73 a ex:fungalInfection ;
+    rdfs:label "DISEASE INSTANCE 73" .
+
+ex:DISEASEINSTANCE74 a ex:painDisorder ;
+    rdfs:label "DISEASE INSTANCE 74" .
+
+ex:DISEASEINSTANCE75 a ex:cardiovascularDisease ;
+    rdfs:label "DISEASE INSTANCE 75" .
+
+ex:DISEASEINSTANCE76 a ex:metabolicDisease ;
+    rdfs:label "DISEASE INSTANCE 76" .
+
+ex:DISEASEINSTANCE77 a ex:respiratoryDisease ;
+    rdfs:label "DISEASE INSTANCE 77" .
+
+ex:DISEASEINSTANCE78 a ex:mentalHealthDisorder ;
+    rdfs:label "DISEASE INSTANCE 78" .
+
+ex:DISEASEINSTANCE79 a ex:gastrointestinalDisease ;
+    rdfs:label "DISEASE INSTANCE 79" .
+
+ex:DISEASEINSTANCE8 a ex:mentalHealthDisorder ;
+    rdfs:label "DISEASE INSTANCE 8" .
+
+ex:DISEASEINSTANCE80 a ex:bacterialInfection ;
+    rdfs:label "DISEASE INSTANCE 80" .
+
+ex:DISEASEINSTANCE81 a ex:inflammatoryDisease ;
+    rdfs:label "DISEASE INSTANCE 81" .
+
+ex:DISEASEINSTANCE82 a ex:viralInfection ;
+    rdfs:label "DISEASE INSTANCE 82" .
+
+ex:DISEASEINSTANCE83 a ex:fungalInfection ;
+    rdfs:label "DISEASE INSTANCE 83" .
+
+ex:DISEASEINSTANCE84 a ex:painDisorder ;
+    rdfs:label "DISEASE INSTANCE 84" .
+
+ex:DISEASEINSTANCE85 a ex:cardiovascularDisease ;
+    rdfs:label "DISEASE INSTANCE 85" .
+
+ex:DISEASEINSTANCE86 a ex:metabolicDisease ;
+    rdfs:label "DISEASE INSTANCE 86" .
+
+ex:DISEASEINSTANCE87 a ex:respiratoryDisease ;
+    rdfs:label "DISEASE INSTANCE 87" .
+
+ex:DISEASEINSTANCE88 a ex:mentalHealthDisorder ;
+    rdfs:label "DISEASE INSTANCE 88" .
+
+ex:DISEASEINSTANCE89 a ex:gastrointestinalDisease ;
+    rdfs:label "DISEASE INSTANCE 89" .
+
+ex:DISEASEINSTANCE9 a ex:gastrointestinalDisease ;
+    rdfs:label "DISEASE INSTANCE 9" .
+
+ex:DISEASEINSTANCE90 a ex:bacterialInfection ;
+    rdfs:label "DISEASE INSTANCE 90" .
+
+ex:DISEASEINSTANCE91 a ex:inflammatoryDisease ;
+    rdfs:label "DISEASE INSTANCE 91" .
+
+ex:DISEASEINSTANCE92 a ex:viralInfection ;
+    rdfs:label "DISEASE INSTANCE 92" .
+
+ex:DISEASEINSTANCE93 a ex:fungalInfection ;
+    rdfs:label "DISEASE INSTANCE 93" .
+
+ex:DISEASEINSTANCE94 a ex:painDisorder ;
+    rdfs:label "DISEASE INSTANCE 94" .
+
+ex:DISEASEINSTANCE95 a ex:cardiovascularDisease ;
+    rdfs:label "DISEASE INSTANCE 95" .
+
+ex:DISEASEINSTANCE96 a ex:metabolicDisease ;
+    rdfs:label "DISEASE INSTANCE 96" .
+
+ex:DISEASEINSTANCE97 a ex:respiratoryDisease ;
+    rdfs:label "DISEASE INSTANCE 97" .
+
+ex:DISEASEINSTANCE98 a ex:mentalHealthDisorder ;
+    rdfs:label "DISEASE INSTANCE 98" .
+
+ex:DISEASEINSTANCE99 a ex:gastrointestinalDisease ;
+    rdfs:label "DISEASE INSTANCE 99" .
+
+ex:GERD a ex:gastrointestinalDisease ;
+    rdfs:label "GERD" .
+
+ex:HEARTFAILURE a ex:cardiovascularDisease ;
+    rdfs:label "HEARTFAILURE" .
+
+ex:HERPES a ex:viralInfection ;
+    rdfs:label "HERPES" .
+
+ex:HYPERTENSION a ex:cardiovascularDisease ;
+    rdfs:label "HYPERTENSION" .
+
+ex:INFLUENZA a ex:viralInfection ;
+    rdfs:label "INFLUENZA" .
+
+ex:MIGRAINE a ex:painDisorder ;
+    rdfs:label "MIGRAINE" .
+
+ex:PNEUMONIA a ex:bacterialInfection ;
+    rdfs:label "PNEUMONIA" .
+
+ex:STREPTHROAT a ex:bacterialInfection ;
+    rdfs:label "STREPTHROAT" .
+
+ex:TUBERCULOSIS a ex:bacterialInfection ;
+    rdfs:label "TUBERCULOSIS" .
+
+ex:TYPE1DIABETES a ex:metabolicDisease ;
+    rdfs:label "TYPE1DIABETES" .
+
+ex:TYPE2DIABETES a ex:metabolicDisease ;
+    rdfs:label "TYPE2DIABETES" .
+
+ex:getAffectedBy a rdf:Property ;
+    rdfs:domain ex:drug ;
+    rdfs:range ex:disease .
+
+ex:ARTHRITIS a ex:inflammatoryDisease ;
+    rdfs:label "ARTHRITIS" .
+
+ex:BACKPAIN a ex:painDisorder ;
+    rdfs:label "BACKPAIN" .
+
+ex:BACTERIALINFECTION a ex:bacterialInfection ;
+    rdfs:label "BACTERIAL INFECTION" .
+
+ex:GASTRICULCER a ex:gastrointestinalDisease ;
+    rdfs:label "GASTRIC ULCER" .
+
+ex:effect a rdf:Property ;
+    rdfs:domain ex:drug ;
+    rdfs:range ex:disease ;
+    rdfs:subPropertyOf ex:getAffectedBy .
+
