@@ -81,26 +81,20 @@ disease_subclasses = [
 
 # Properties
 getAffectedBy = EX.getAffectedBy
-effect = EX.effect
 treats = EX.treats
 relieves = EX.relieves
-worsen = EX.worsen
+worsens = EX.worsens
 
-for prop in [getAffectedBy, effect, treats, relieves, worsen]:
+for prop in [getAffectedBy, treats, relieves, worsens]:
     g.add((prop, RDF.type, RDF.Property))
 
 # General relationship: drug affects disease
 g.add((getAffectedBy, RDFS.domain, drug))
 g.add((getAffectedBy, RDFS.range, disease))
 
-# effect is a general kind of getAffectedBy
-g.add((effect, RDFS.subPropertyOf, getAffectedBy))
-g.add((effect, RDFS.domain, drug))
-g.add((effect, RDFS.range, disease))
-
 # Specific effects
-for prop in [treats, relieves, worsen]:
-    g.add((prop, RDFS.subPropertyOf, effect))
+for prop in [treats, relieves, worsens]:
+    g.add((prop, RDFS.subPropertyOf, getAffectedBy))
     g.add((prop, RDFS.domain, drug))
     g.add((prop, RDFS.range, disease))
  
@@ -119,7 +113,7 @@ for instance, cls, label in required_instances:
 
 g.add((EX.IBUPROFEN, relieves, EX.ARTHRITIS))
 g.add((EX.AMOXICILLIN, treats, EX.BACTERIALINFECTION))
-g.add((EX.IBUPROFEN, worsen, EX.GASTRICULCER))
+g.add((EX.IBUPROFEN, worsens, EX.GASTRICULCER))
 
 # Additional instances and relationships to enrich the knowledge graph
 named_drugs = [
@@ -203,9 +197,9 @@ relationships = [
     ("FORMOTEROL", "relieves", "COPD"),
     ("SERTRALINE", "treats", "DEPRESSION"),
     ("FLUOXETINE", "treats", "ANXIETY"),
-    ("IBUPROFEN", "worsen", "GASTRICULCER"),
-    ("ASPIRIN", "worsen", "GERD"),
-    ("NAPROXEN", "worsen", "GASTRICULCER"),
+    ("IBUPROFEN", "worsens", "GASTRICULCER"),
+    ("ASPIRIN", "worsens", "GERD"),
+    ("NAPROXEN", "worsens", "GASTRICULCER"),
 ]
 
 for drug_name, relation_name, disease_name in relationships:
@@ -230,7 +224,7 @@ for i in range(1, 101):
     elif i % 3 == 1:
         g.add((drug_instance, relieves, disease_instance))
     else:
-        g.add((drug_instance, worsen, disease_instance))
+        g.add((drug_instance, worsens, disease_instance))
 
 # Serialize the graph to a Turtle file
 output_file = "medical_kg.ttl"
