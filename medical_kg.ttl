@@ -82,7 +82,7 @@ ex:AMOXICILLIN a ex:antibiotics ;
 ex:ASPIRIN a ex:antiInflammatory ;
     rdfs:label "ASPIRIN" ;
     ex:relieves ex:BACKPAIN ;
-    ex:worsen ex:GERD .
+    ex:worsens ex:GERD .
 
 ex:AZITHROMYCIN a ex:antibiotics ;
     rdfs:label "AZITHROMYCIN" ;
@@ -113,7 +113,7 @@ ex:DRUGINSTANCE100 a ex:antibiotics ;
 
 ex:DRUGINSTANCE11 a ex:antiInflammatory ;
     rdfs:label "DRUG INSTANCE 11" ;
-    ex:worsen ex:DISEASEINSTANCE11 .
+    ex:worsens ex:DISEASEINSTANCE11 .
 
 ex:DRUGINSTANCE12 a ex:antiviral ;
     rdfs:label "DRUG INSTANCE 12" ;
@@ -125,7 +125,7 @@ ex:DRUGINSTANCE13 a ex:antifungal ;
 
 ex:DRUGINSTANCE14 a ex:analgesic ;
     rdfs:label "DRUG INSTANCE 14" ;
-    ex:worsen ex:DISEASEINSTANCE14 .
+    ex:worsens ex:DISEASEINSTANCE14 .
 
 ex:DRUGINSTANCE15 a ex:antihypertensive ;
     rdfs:label "DRUG INSTANCE 15" ;
@@ -137,7 +137,7 @@ ex:DRUGINSTANCE16 a ex:antidiabetic ;
 
 ex:DRUGINSTANCE17 a ex:anticoagulant ;
     rdfs:label "DRUG INSTANCE 17" ;
-    ex:worsen ex:DISEASEINSTANCE17 .
+    ex:worsens ex:DISEASEINSTANCE17 .
 
 ex:DRUGINSTANCE18 a ex:antidepressant ;
     rdfs:label "DRUG INSTANCE 18" ;
@@ -149,11 +149,11 @@ ex:DRUGINSTANCE19 a ex:bronchodilator ;
 
 ex:DRUGINSTANCE2 a ex:antiviral ;
     rdfs:label "DRUG INSTANCE 2" ;
-    ex:worsen ex:DISEASEINSTANCE2 .
+    ex:worsens ex:DISEASEINSTANCE2 .
 
 ex:DRUGINSTANCE20 a ex:antibiotics ;
     rdfs:label "DRUG INSTANCE 20" ;
-    ex:worsen ex:DISEASEINSTANCE20 .
+    ex:worsens ex:DISEASEINSTANCE20 .
 
 ex:DRUGINSTANCE21 a ex:antiInflammatory ;
     rdfs:label "DRUG INSTANCE 21" ;
@@ -165,7 +165,7 @@ ex:DRUGINSTANCE22 a ex:antiviral ;
 
 ex:DRUGINSTANCE23 a ex:antifungal ;
     rdfs:label "DRUG INSTANCE 23" ;
-    ex:worsen ex:DISEASEINSTANCE23 .
+    ex:worsens ex:DISEASEINSTANCE23 .
 
 ex:DRUGINSTANCE24 a ex:analgesic ;
     rdfs:label "DRUG INSTANCE 24" ;
@@ -177,7 +177,7 @@ ex:DRUGINSTANCE25 a ex:antihypertensive ;
 
 ex:DRUGINSTANCE26 a ex:antidiabetic ;
     rdfs:label "DRUG INSTANCE 26" ;
-    ex:worsen ex:DISEASEINSTANCE26 .
+    ex:worsens ex:DISEASEINSTANCE26 .
 
 ex:DRUGINSTANCE27 a ex:anticoagulant ;
     rdfs:label "DRUG INSTANCE 27" ;
@@ -189,7 +189,7 @@ ex:DRUGINSTANCE28 a ex:antidepressant ;
 
 ex:DRUGINSTANCE29 a ex:bronchodilator ;
     rdfs:label "DRUG INSTANCE 29" ;
-    ex:worsen ex:DISEASEINSTANCE29 .
+    ex:worsens ex:DISEASEINSTANCE29 .
 
 ex:DRUGINSTANCE3 a ex:antifungal ;
     rdfs:label "DRUG INSTANCE 3" ;
@@ -205,7 +205,7 @@ ex:DRUGINSTANCE31 a ex:antiInflammatory ;
 
 ex:DRUGINSTANCE32 a ex:antiviral ;
     rdfs:label "DRUG INSTANCE 32" ;
-    ex:worsen ex:DISEASEINSTANCE32 .
+    ex:worsens ex:DISEASEINSTANCE32 .
 
 ex:DRUGINSTANCE33 a ex:antifungal ;
     rdfs:label "DRUG INSTANCE 33" ;
@@ -217,7 +217,7 @@ ex:DRUGINSTANCE34 a ex:analgesic ;
 
 ex:DRUGINSTANCE35 a ex:antihypertensive ;
     rdfs:label "DRUG INSTANCE 35" ;
-    ex:worsen ex:DISEASEINSTANCE35 .
+    ex:worsens ex:DISEASEINSTANCE35 .
 
 ex:DRUGINSTANCE36 a ex:antidiabetic ;
     rdfs:label "DRUG INSTANCE 36" ;
@@ -229,7 +229,7 @@ ex:DRUGINSTANCE37 a ex:anticoagulant ;
 
 ex:DRUGINSTANCE38 a ex:antidepressant ;
     rdfs:label "DRUG INSTANCE 38" ;
-    ex:worsen ex:DISEASEINSTANCE38 .
+    ex:worsens ex:DISEASEINSTANCE38 .
 
 ex:DRUGINSTANCE39 a ex:bronchodilator ;
     rdfs:label "DRUG INSTANCE 39" ;
@@ -245,7 +245,7 @@ ex:DRUGINSTANCE40 a ex:antibiotics ;
 
 ex:DRUGINSTANCE41 a ex:antiInflammatory ;
     rdfs:label "DRUG INSTANCE 41" ;
-    ex:worsen ex:DISEASEINSTANCE41 .
+    ex:worsens ex:DISEASEINSTANCE41 .
 
 ex:DRUGINSTANCE42 a ex:antiviral ;
     rdfs:label "DRUG INSTANCE 42" ;
@@ -257,7 +257,7 @@ ex:DRUGINSTANCE43 a ex:antifungal ;
 
 ex:DRUGINSTANCE44 a ex:analgesic ;
     rdfs:label "DRUG INSTANCE 44" ;
-    ex:worsen ex:DISEASEINSTANCE44 .
+    ex:worsens ex:DISEASEINSTANCE44 .
 
 ex:DRUGINSTANCE45 a ex:antihypertensive ;
     rdfs:label "DRUG INSTANCE 45" ;
@@ -269,7 +269,7 @@ ex:DRUGINSTANCE46 a ex:antidiabetic ;
 
 ex:DRUGINSTANCE47 a ex:anticoagulant ;
     rdfs:label "DRUG INSTANCE 47" ;
-    ex:worsen ex:DISEASEINSTANCE47 .
+    ex:worsens ex:DISEASEINSTANCE47 .
 
 ex:DRUGINSTANCE48 a ex:antidepressant ;
     rdfs:label "DRUG INSTANCE 48" ;
@@ -281,11 +281,11 @@ ex:DRUGINSTANCE49 a ex:bronchodilator ;
 
 ex:DRUGINSTANCE5 a ex:antihypertensive ;
     rdfs:label "DRUG INSTANCE 5" ;
-    ex:worsen ex:DISEASEINSTANCE5 .
+    ex:worsens ex:DISEASEINSTANCE5 .
 
 ex:DRUGINSTANCE50 a ex:antibiotics ;
     rdfs:label "DRUG INSTANCE 50" ;
-    ex:worsen ex:DISEASEINSTANCE50 .
+    ex:worsens ex:DISEASEINSTANCE50 .
 
 ex:DRUGINSTANCE51 a ex:antiInflammatory ;
     rdfs:label "DRUG INSTANCE 51" ;
@@ -297,7 +297,7 @@ ex:DRUGINSTANCE52 a ex:antiviral ;
 
 ex:DRUGINSTANCE53 a ex:antifungal ;
     rdfs:label "DRUG INSTANCE 53" ;
-    ex:worsen ex:DISEASEINSTANCE53 .
+    ex:worsens ex:DISEASEINSTANCE53 .
 
 ex:DRUGINSTANCE54 a ex:analgesic ;
     rdfs:label "DRUG INSTANCE 54" ;
@@ -309,7 +309,7 @@ ex:DRUGINSTANCE55 a ex:antihypertensive ;
 
 ex:DRUGINSTANCE56 a ex:antidiabetic ;
     rdfs:label "DRUG INSTANCE 56" ;
-    ex:worsen ex:DISEASEINSTANCE56 .
+    ex:worsens ex:DISEASEINSTANCE56 .
 
 ex:DRUGINSTANCE57 a ex:anticoagulant ;
     rdfs:label "DRUG INSTANCE 57" ;
@@ -321,7 +321,7 @@ ex:DRUGINSTANCE58 a ex:antidepressant ;
 
 ex:DRUGINSTANCE59 a ex:bronchodilator ;
     rdfs:label "DRUG INSTANCE 59" ;
-    ex:worsen ex:DISEASEINSTANCE59 .
+    ex:worsens ex:DISEASEINSTANCE59 .
 
 ex:DRUGINSTANCE6 a ex:antidiabetic ;
     rdfs:label "DRUG INSTANCE 6" ;
@@ -337,7 +337,7 @@ ex:DRUGINSTANCE61 a ex:antiInflammatory ;
 
 ex:DRUGINSTANCE62 a ex:antiviral ;
     rdfs:label "DRUG INSTANCE 62" ;
-    ex:worsen ex:DISEASEINSTANCE62 .
+    ex:worsens ex:DISEASEINSTANCE62 .
 
 ex:DRUGINSTANCE63 a ex:antifungal ;
     rdfs:label "DRUG INSTANCE 63" ;
@@ -349,7 +349,7 @@ ex:DRUGINSTANCE64 a ex:analgesic ;
 
 ex:DRUGINSTANCE65 a ex:antihypertensive ;
     rdfs:label "DRUG INSTANCE 65" ;
-    ex:worsen ex:DISEASEINSTANCE65 .
+    ex:worsens ex:DISEASEINSTANCE65 .
 
 ex:DRUGINSTANCE66 a ex:antidiabetic ;
     rdfs:label "DRUG INSTANCE 66" ;
@@ -361,7 +361,7 @@ ex:DRUGINSTANCE67 a ex:anticoagulant ;
 
 ex:DRUGINSTANCE68 a ex:antidepressant ;
     rdfs:label "DRUG INSTANCE 68" ;
-    ex:worsen ex:DISEASEINSTANCE68 .
+    ex:worsens ex:DISEASEINSTANCE68 .
 
 ex:DRUGINSTANCE69 a ex:bronchodilator ;
     rdfs:label "DRUG INSTANCE 69" ;
@@ -377,7 +377,7 @@ ex:DRUGINSTANCE70 a ex:antibiotics ;
 
 ex:DRUGINSTANCE71 a ex:antiInflammatory ;
     rdfs:label "DRUG INSTANCE 71" ;
-    ex:worsen ex:DISEASEINSTANCE71 .
+    ex:worsens ex:DISEASEINSTANCE71 .
 
 ex:DRUGINSTANCE72 a ex:antiviral ;
     rdfs:label "DRUG INSTANCE 72" ;
@@ -389,7 +389,7 @@ ex:DRUGINSTANCE73 a ex:antifungal ;
 
 ex:DRUGINSTANCE74 a ex:analgesic ;
     rdfs:label "DRUG INSTANCE 74" ;
-    ex:worsen ex:DISEASEINSTANCE74 .
+    ex:worsens ex:DISEASEINSTANCE74 .
 
 ex:DRUGINSTANCE75 a ex:antihypertensive ;
     rdfs:label "DRUG INSTANCE 75" ;
@@ -401,7 +401,7 @@ ex:DRUGINSTANCE76 a ex:antidiabetic ;
 
 ex:DRUGINSTANCE77 a ex:anticoagulant ;
     rdfs:label "DRUG INSTANCE 77" ;
-    ex:worsen ex:DISEASEINSTANCE77 .
+    ex:worsens ex:DISEASEINSTANCE77 .
 
 ex:DRUGINSTANCE78 a ex:antidepressant ;
     rdfs:label "DRUG INSTANCE 78" ;
@@ -413,11 +413,11 @@ ex:DRUGINSTANCE79 a ex:bronchodilator ;
 
 ex:DRUGINSTANCE8 a ex:antidepressant ;
     rdfs:label "DRUG INSTANCE 8" ;
-    ex:worsen ex:DISEASEINSTANCE8 .
+    ex:worsens ex:DISEASEINSTANCE8 .
 
 ex:DRUGINSTANCE80 a ex:antibiotics ;
     rdfs:label "DRUG INSTANCE 80" ;
-    ex:worsen ex:DISEASEINSTANCE80 .
+    ex:worsens ex:DISEASEINSTANCE80 .
 
 ex:DRUGINSTANCE81 a ex:antiInflammatory ;
     rdfs:label "DRUG INSTANCE 81" ;
@@ -429,7 +429,7 @@ ex:DRUGINSTANCE82 a ex:antiviral ;
 
 ex:DRUGINSTANCE83 a ex:antifungal ;
     rdfs:label "DRUG INSTANCE 83" ;
-    ex:worsen ex:DISEASEINSTANCE83 .
+    ex:worsens ex:DISEASEINSTANCE83 .
 
 ex:DRUGINSTANCE84 a ex:analgesic ;
     rdfs:label "DRUG INSTANCE 84" ;
@@ -441,7 +441,7 @@ ex:DRUGINSTANCE85 a ex:antihypertensive ;
 
 ex:DRUGINSTANCE86 a ex:antidiabetic ;
     rdfs:label "DRUG INSTANCE 86" ;
-    ex:worsen ex:DISEASEINSTANCE86 .
+    ex:worsens ex:DISEASEINSTANCE86 .
 
 ex:DRUGINSTANCE87 a ex:anticoagulant ;
     rdfs:label "DRUG INSTANCE 87" ;
@@ -453,7 +453,7 @@ ex:DRUGINSTANCE88 a ex:antidepressant ;
 
 ex:DRUGINSTANCE89 a ex:bronchodilator ;
     rdfs:label "DRUG INSTANCE 89" ;
-    ex:worsen ex:DISEASEINSTANCE89 .
+    ex:worsens ex:DISEASEINSTANCE89 .
 
 ex:DRUGINSTANCE9 a ex:bronchodilator ;
     rdfs:label "DRUG INSTANCE 9" ;
@@ -469,7 +469,7 @@ ex:DRUGINSTANCE91 a ex:antiInflammatory ;
 
 ex:DRUGINSTANCE92 a ex:antiviral ;
     rdfs:label "DRUG INSTANCE 92" ;
-    ex:worsen ex:DISEASEINSTANCE92 .
+    ex:worsens ex:DISEASEINSTANCE92 .
 
 ex:DRUGINSTANCE93 a ex:antifungal ;
     rdfs:label "DRUG INSTANCE 93" ;
@@ -481,7 +481,7 @@ ex:DRUGINSTANCE94 a ex:analgesic ;
 
 ex:DRUGINSTANCE95 a ex:antihypertensive ;
     rdfs:label "DRUG INSTANCE 95" ;
-    ex:worsen ex:DISEASEINSTANCE95 .
+    ex:worsens ex:DISEASEINSTANCE95 .
 
 ex:DRUGINSTANCE96 a ex:antidiabetic ;
     rdfs:label "DRUG INSTANCE 96" ;
@@ -493,7 +493,7 @@ ex:DRUGINSTANCE97 a ex:anticoagulant ;
 
 ex:DRUGINSTANCE98 a ex:antidepressant ;
     rdfs:label "DRUG INSTANCE 98" ;
-    ex:worsen ex:DISEASEINSTANCE98 .
+    ex:worsens ex:DISEASEINSTANCE98 .
 
 ex:DRUGINSTANCE99 a ex:bronchodilator ;
     rdfs:label "DRUG INSTANCE 99" ;
@@ -517,7 +517,7 @@ ex:HEPARIN a ex:anticoagulant ;
 ex:IBUPROFEN a ex:antiInflammatory ;
     rdfs:label "IBUPROFEN" ;
     ex:relieves ex:ARTHRITIS ;
-    ex:worsen ex:GASTRICULCER .
+    ex:worsens ex:GASTRICULCER .
 
 ex:INSULIN a ex:antidiabetic ;
     rdfs:label "INSULIN" ;
@@ -541,7 +541,7 @@ ex:MORPHINE a ex:analgesic ;
 ex:NAPROXEN a ex:antiInflammatory ;
     rdfs:label "NAPROXEN" ;
     ex:relieves ex:ARTHRITIS ;
-    ex:worsen ex:GASTRICULCER .
+    ex:worsens ex:GASTRICULCER .
 
 ex:OSELTAMIVIR a ex:antiviral ;
     rdfs:label "OSELTAMIVIR" ;
@@ -576,17 +576,17 @@ ex:WARFARIN a ex:anticoagulant ;
 ex:relieves a rdf:Property ;
     rdfs:domain ex:drug ;
     rdfs:range ex:disease ;
-    rdfs:subPropertyOf ex:effect .
+    rdfs:subPropertyOf ex:getAffectedBy .
 
 ex:treats a rdf:Property ;
     rdfs:domain ex:drug ;
     rdfs:range ex:disease ;
-    rdfs:subPropertyOf ex:effect .
+    rdfs:subPropertyOf ex:getAffectedBy .
 
-ex:worsen a rdf:Property ;
+ex:worsens a rdf:Property ;
     rdfs:domain ex:drug ;
     rdfs:range ex:disease ;
-    rdfs:subPropertyOf ex:effect .
+    rdfs:subPropertyOf ex:getAffectedBy .
 
 ex:ANXIETY a ex:mentalHealthDisorder ;
     rdfs:label "ANXIETY" .
@@ -942,10 +942,6 @@ ex:TYPE1DIABETES a ex:metabolicDisease ;
 ex:TYPE2DIABETES a ex:metabolicDisease ;
     rdfs:label "TYPE2DIABETES" .
 
-ex:getAffectedBy a rdf:Property ;
-    rdfs:domain ex:drug ;
-    rdfs:range ex:disease .
-
 ex:ARTHRITIS a ex:inflammatoryDisease ;
     rdfs:label "ARTHRITIS" .
 
@@ -958,8 +954,7 @@ ex:BACTERIALINFECTION a ex:bacterialInfection ;
 ex:GASTRICULCER a ex:gastrointestinalDisease ;
     rdfs:label "GASTRIC ULCER" .
 
-ex:effect a rdf:Property ;
+ex:getAffectedBy a rdf:Property ;
     rdfs:domain ex:drug ;
-    rdfs:range ex:disease ;
-    rdfs:subPropertyOf ex:getAffectedBy .
+    rdfs:range ex:disease .
 
