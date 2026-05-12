@@ -576,17 +576,17 @@ ex:WARFARIN a ex:anticoagulant ;
 ex:relieves a rdf:Property ;
     rdfs:domain ex:drug ;
     rdfs:range ex:disease ;
-    rdfs:subPropertyOf ex:getAffectedBy .
+    rdfs:subPropertyOf ex:hasEffectOn .
 
 ex:treats a rdf:Property ;
     rdfs:domain ex:drug ;
     rdfs:range ex:disease ;
-    rdfs:subPropertyOf ex:getAffectedBy .
+    rdfs:subPropertyOf ex:hasEffectOn .
 
 ex:worsens a rdf:Property ;
     rdfs:domain ex:drug ;
     rdfs:range ex:disease ;
-    rdfs:subPropertyOf ex:getAffectedBy .
+    rdfs:subPropertyOf ex:hasEffectOn .
 
 ex:ANXIETY a ex:mentalHealthDisorder ;
     rdfs:label "ANXIETY" .
@@ -954,7 +954,7 @@ ex:BACTERIALINFECTION a ex:bacterialInfection ;
 ex:GASTRICULCER a ex:gastrointestinalDisease ;
     rdfs:label "GASTRIC ULCER" .
 
-ex:getAffectedBy a rdf:Property ;
+ex:hasEffectOn a rdf:Property ;
     rdfs:domain ex:drug ;
     rdfs:range ex:disease .
 

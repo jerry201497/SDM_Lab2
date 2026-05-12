@@ -80,21 +80,21 @@ disease_subclasses = [
 ]
 
 # Properties
-getAffectedBy = EX.getAffectedBy
+hasEffectOn = EX.hasEffectOn
 treats = EX.treats
 relieves = EX.relieves
 worsens = EX.worsens
 
-for prop in [getAffectedBy, treats, relieves, worsens]:
+for prop in [hasEffectOn, treats, relieves, worsens]:
     g.add((prop, RDF.type, RDF.Property))
 
 # General relationship: drug affects disease
-g.add((getAffectedBy, RDFS.domain, drug))
-g.add((getAffectedBy, RDFS.range, disease))
+g.add((hasEffectOn, RDFS.domain, drug))
+g.add((hasEffectOn, RDFS.range, disease))
 
 # Specific effects
 for prop in [treats, relieves, worsens]:
-    g.add((prop, RDFS.subPropertyOf, getAffectedBy))
+    g.add((prop, RDFS.subPropertyOf, hasEffectOn))
     g.add((prop, RDFS.domain, drug))
     g.add((prop, RDFS.range, disease))
  
