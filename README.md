@@ -30,7 +30,7 @@ PREFIX ex: <http://example.org/medical-kg/>
 
 SELECT ?drug ?disease 
 WHERE {
-  ?drug ex:getAffectedBy ?disease .
+  ?drug ex:hasEffectOn ?disease .
 }
 
 
